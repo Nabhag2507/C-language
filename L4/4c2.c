@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int days, years, weeks;
+
+    printf("Enter days: ");
+    scanf("%d", &days);
+
+    years = days / 365; 
+    weeks = (days % 365) / 7;
+
+    days = days - ((years * 365) + (weeks * 7));
+
+
+    printf("%d Years, %d Weeks, and %d Days.\n", years, weeks, days);
+
+    return 0;
+}
